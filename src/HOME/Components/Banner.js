@@ -1,29 +1,29 @@
-import React from 'react'
-import { styled } from 'styled-components';
-import icon from "../../ASSETS/Frame.png"
+import React from "react";
+import { styled } from "styled-components";
+import icon from "../../ASSETS/Frame.png";
 import banner from "../../ASSETS/netflix.jpg";
 const Banner = () => {
   return (
     <Poster>
-    <div className="Header">
-      <h1>Open Source UI</h1>
-      <h1>elements for any project</h1>
-      <p>
-        Create share and use
-        <img src={icon} alt="loading" />
-        beautiful custom
-      </p>
-      <p>elements made with css</p>
-    </div>
-    <div className="Carousel">
-      <div className="ban-img"></div>
-      <button className="btn btn-hov">Browse all elements</button>
-    </div>
-  </Poster>
-  )
-}
+      <div className="Header">
+        <h1>Open Source UI</h1>
+        <h1>elements for any project</h1>
+        <p>
+          Create share and use
+          <img src={icon} alt="loading" />
+          beautiful custom
+        </p>
+        <p>elements made with css</p>
+      </div>
+      <div className="Carousel">
+        <div className="ban-img"></div>
+        <button className="btn btn-hov">Browse all elements</button>
+      </div>
+    </Poster>
+  );
+};
 
-export default Banner
+export default Banner;
 const Poster = styled.div`
   width: 100%;
   z-index: 0;

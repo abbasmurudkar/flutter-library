@@ -44,6 +44,7 @@ const Home = () => {
       </NavBar>
       <Banner/>
       <Users/>
+     
     </div>
   );
 };
@@ -90,5 +91,7 @@ const NavBar = styled.div`
       }
     }
   }`;
+
+  
 
 
