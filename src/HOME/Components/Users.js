@@ -9,7 +9,8 @@ import user5 from "../../ASSETS/user5.png";
 import user6 from "../../ASSETS/user6.png";
 import Icon from "@rsuite/icons/legacy/Amazon";
 import Discord from "../../ASSETS/world-3XZKOUIT.png.png";
-import { Button, ButtonGroup, ButtonToolbar, Tag } from "rsuite";
+import Discordlogo from "../../ASSETS/Discord-logo.svg";
+import { Button, IconButton, Tag } from "rsuite";
 const Users = () => {
   const users = [
     {
@@ -141,7 +142,12 @@ const Users = () => {
               <br /> community on Discord!
             </h2>
 
-            <Button size="lg" appearance="primary" startIcon={<Icon />}>
+            <Button appearance="primary">
+              <img
+                style={{ background: "transparent", paddingRight: "10px" }}
+                src={Discordlogo}
+                alt="loading"
+              />
               Join Discord
             </Button>
           </div>
@@ -300,6 +306,8 @@ const Poster = styled.div`
         border-radius: 200px;
         border: 2px solid #5865f2;
         background: #5865f2;
+        height: 46px;
+        width: 200px;
       }
     }
     .img-discord {

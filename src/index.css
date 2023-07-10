@@ -9,4 +9,5 @@
   font-family: 'Playfair Display', serif;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
+  user-select: none;
 }
