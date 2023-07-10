@@ -7,7 +7,8 @@ import user3 from "../../ASSETS/user3.png";
 import user4 from "../../ASSETS/user4.png";
 import user5 from "../../ASSETS/user5.png";
 import user6 from "../../ASSETS/user6.png";
-import Icon from "@rsuite/icons/legacy/Amazon"
+import Icon from "@rsuite/icons/legacy/Amazon";
+import Discord from "../../ASSETS/world-3XZKOUIT.png.png";
 import { Button, ButtonGroup, ButtonToolbar, Tag } from "rsuite";
 const Users = () => {
   const users = [
@@ -135,19 +136,21 @@ const Users = () => {
       <Poster>
         <div className="poster-box">
           <div className="txt-discord">
-<h2 style={{textAlign:"left"}}>Get Involved in the</h2>
-<h2>community on Discord</h2>
-<ButtonToolbar>
-    <Button color="red" size="lg" appearance="primary" startIcon={<Icon/>}>Join Discord</Button>
-</ButtonToolbar>
+            <h2 style={{ textAlign: "left" }}>
+              Get Involved in the
+              <br /> community on Discord!
+            </h2>
+
+            <Button size="lg" appearance="primary" startIcon={<Icon />}>
+              Join Discord
+            </Button>
           </div>
           <div className="img-discord">
-
+            <img src={Discord} alt="Loading" />
           </div>
         </div>
-        </Poster>
+      </Poster>
     </TextualContent>
-  
   );
 };
 
@@ -267,32 +270,53 @@ const Poster = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 2px solid red;
-  margin-top:150px ;
+  /* border: 2px solid red; */
+  margin-top: 150px;
   width: 100%;
-  .poster-box{
-    width: 750px;
+
+  .poster-box {
+    width: 700px;
     height: 280px;
     flex-shrink: 0;
-    border: 2px solid green;
+    /* border: 2px solid green; */
     display: grid;
     grid-template-columns: 50% 50%;
+    border-radius: 20px;
 
-    .txt-discord{
-        display:flex;
-        flex-direction: column;
-        padding: 50px 50px;
-        h3{
-            display: block;
-            border: 2px solid green;
-        }
+    .txt-discord {
+      display: flex;
+      flex-direction: column;
+      background: black;
+      padding: 50px 0px 10px 80px;
+      justify-content: space-around;
+      border-radius: 20px 0px 0px 20px;
 
+      h2 {
+        display: block;
+        background: black;
+        line-height: 24px;
+      }
+      .rs-btn {
+        border-radius: 200px;
+        border: 2px solid #5865f2;
+        background: #5865f2;
+      }
     }
-    .img-discord{
-        border: 2px solid ;
+    .img-discord {
+      /* border: 2px solid; */
+      display: flex;
+      background: black;
+      justify-content: center;
+      align-items: center;
+      border-radius: 0px 20px 20px 0px;
+
+      img {
+        width: 200px;
+        height: 200px;
+      }
     }
-.rs-ripple-pond{
-    height: 0%;
-}
+    .rs-ripple-pond {
+      height: 0%;
+    }
   }
-  `;
+`;
