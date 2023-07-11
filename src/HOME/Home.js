@@ -7,6 +7,7 @@ import "../global.css";
 
 import Banner from "./Components/Banner";
 import Users from "./Components/Users";
+import Footer from "./Components/Footer";
 
 const Navs = [
   {
@@ -44,7 +45,8 @@ const Home = () => {
       </NavBar>
       <Banner/>
       <Users/>
-     
+      
+     <Footer/>
     </div>
   );
 };
@@ -93,5 +95,4 @@ const NavBar = styled.div`
   }`;
 
   
-
 

@@ -232,9 +232,11 @@ const TextualContent = styled.div`
         width: 70px;
         height: 100%;
         .rs-tag-default {
-          position: relative;
-          top: 7px;
-          right: 10px;
+          
+    position: relative;
+    top: -30px;
+    right: -12px;
+
         }
         img {
           width: 100%;
